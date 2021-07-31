@@ -1,15 +1,4 @@
-![EconHacks logo](econhacks-logo.png)
-
-## EconHacks 2021 Official Website
-[https://econhacks.org](https://econhacks.org)
-
-## Technologies Used
-- React
-- Next.js
-- GraphCMS
-- Apollo GraphQL client
-- Deployed on Vercel
-
+## ADL Appathon 2021 Official Website
 ## Getting Started
 
 First, run the development server:
