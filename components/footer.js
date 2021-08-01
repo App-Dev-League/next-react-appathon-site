@@ -31,18 +31,6 @@ export default function Footer(props) {
             </p>
             <div className={styles.footer_content_links}>
               <a
-                href="https://www.facebook.com/appdev.league"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Our Facebook"
-              >
-                <Icon
-                  glyph="facebook"
-                  size={36}
-                  alt="Facebook"
-                />
-              </a>
-              <a
                 href="https://www.instagram.com/appdevleague/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -88,6 +76,18 @@ export default function Footer(props) {
                   width={36}
                   height={36}
                   alt="LinkedIn"
+                />
+              </a>
+              <a
+                href="https://www.facebook.com/appdev.league"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Our Facebook"
+              >
+                <Icon
+                  glyph="facebook"
+                  size={36}
+                  alt="Facebook"
                 />
               </a>
             </div>
