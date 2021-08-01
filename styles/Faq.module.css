@@ -71,3 +71,7 @@
   line-height: 153.52%;
   margin: 0;
 }
+.faq_cards_card a {
+  color: rgb(85, 83, 209);
+  text-decoration: underline;
+}

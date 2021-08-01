@@ -43,7 +43,7 @@ export default function Footer(props) {
                 />
               </a>
               <a
-                href="https://discord.gg/FtegFYAuZ6"
+                href="https://discord.gg/NYTKTHFEQV"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Our Discord"

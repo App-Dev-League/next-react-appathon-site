@@ -11,8 +11,8 @@ export default function SpeakerCard(props) {
             <Image
               src={photo.url}
               alt={`Image of ${title}`}
-              width={160}
-              height={160}
+              width={120}
+              height={120}
             />
           </div>
         )}

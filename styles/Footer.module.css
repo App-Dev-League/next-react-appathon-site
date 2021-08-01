@@ -29,9 +29,10 @@
 }
 .footer_content a {
   transition: 200ms ease-in-out;
+  color: rgb(170, 169, 240);
 }
 .footer_content a:hover {
-  color: #fff;
+  color: rgb(195, 194, 243);
 }
 .footer_content a svg {
   fill: #eee;

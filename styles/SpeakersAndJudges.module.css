@@ -12,8 +12,17 @@
   margin-bottom: 1.5rem;
 }
 .speakers_judges_cards {
-  display: flex;
-  overflow: auto;
-  padding: 1rem 0 2rem 0;
-  margin: -1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+@media (max-width: 992px) {
+  .speakers_judges_cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .speakers_judges_cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

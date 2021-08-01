@@ -46,13 +46,13 @@
   border-radius: 100%;
 }
 .schedule_event_time_dot_keynotes {
-  background: purple;
+  background: rgb(14,48,130);
 }
 .schedule_event_time_dot_speakers {
-  background: yellowgreen;
+  background: rgb(75,195,184);
 }
 .schedule_event_time_dot_workshops {
-  background: orange;
+  background: rgb(200,216,222);
 }
 .schedule_event_mobile_description {
   margin-left: 1rem;

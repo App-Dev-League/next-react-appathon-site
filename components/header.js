@@ -26,7 +26,7 @@ export default function Header(props) {
               <div className={styles.header_buttons}>
                 <CTAButton href="https://docs.google.com/forms/d/e/1FAIpQLScwzPvNG_H585YF2Rqe1GrUeS7ZK5Nvp7br7pbrGq-vRgKdug/viewform" openInNewTab>Register</CTAButton>
                 <CTAButton href="https://docs.google.com/forms/d/e/1FAIpQLScwzPvNG_H585YF2Rqe1GrUeS7ZK5Nvp7br7pbrGq-vRgKdug/viewform" openInNewTab smallFont outlined>Submit a Project</CTAButton>
-                <CTAButton href="https://discord.gg/FtegFYAuZ6" openInNewTab smallFont outlined>Join Our Discord</CTAButton>
+                <CTAButton href="https://discord.gg/NYTKTHFEQV" openInNewTab smallFont outlined>Join Our Discord</CTAButton>
               </div>
             </div>
           </div>
