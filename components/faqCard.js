@@ -1,10 +1,12 @@
 import styles from '../styles/Faq.module.css'
 import Icon from '@hackclub/icons'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 
 export default function FaqCard(props) {
   const {header, content} = props
   const [isOpen, setIsOpen] = useState(false)
+  const paragraphRef = useRef()
+
   return (
     <div className={styles.faq_cards_card}>
       <div>
@@ -14,7 +16,7 @@ export default function FaqCard(props) {
           {isOpen && <Icon glyph="up-caret" size={36} alt="Collapse"/>}
         </button>
       </div>
-      {isOpen && <p dangerouslySetInnerHTML={{__html: content}}/>}
+       <p ref={paragraphRef} dangerouslySetInnerHTML={{__html: content}} style={{maxHeight: isOpen ? paragraphRef.current.scrollHeight : 0}}/>
     </div>
   )
 }
