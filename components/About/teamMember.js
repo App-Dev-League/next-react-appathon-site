@@ -1,9 +1,8 @@
 import styles from '../../styles/About/Team.module.css'
-import TeamPhotoFlag from '../../components/teamPhotoFlag'
 import LinkedInIcon from '../../public/icons/linkedin.svg'
 
 export default function TeamMember(props) {
-  const { photo, country, name, role, linkedInLink } = props.member
+  const { photo, name, role, linkedInLink } = props.member
   return (
     <div className={styles.team_cards_card}>
       <div className={styles.team_cards_card_image_wrapper}>
@@ -20,7 +19,6 @@ export default function TeamMember(props) {
             style={{backgroundColor: '#C4C4C4'}}
           />
         }
-        <TeamPhotoFlag country={country} />
       </div>
       <div className={styles.team_cards_card_info}>
         <div className={styles.team_cards_card_info_header}>

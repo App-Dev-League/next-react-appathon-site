@@ -1,5 +1,6 @@
 import styles from '../styles/Faq.module.css'
 import Container from './container'
+import FaqCard from './faqCard'
 
 export default function Faq(props) {
   const {cardData} = props
@@ -10,12 +11,7 @@ export default function Faq(props) {
         {cardData && (
           <div className={styles.faq_cards}>
             {cardData.map((card, index) => {
-              return (
-                <div className={styles.faq_cards_card}>
-                  <h2>{card.header}</h2>
-                  <p dangerouslySetInnerHTML={{__html: card.content}}/>
-                </div>
-              )
+              return <FaqCard header={card.header} content={card.content} />
             })}
           </div>
         )}

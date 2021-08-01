@@ -33,6 +33,9 @@
   z-index: -1;
   transition: 300ms ease-in-out;
 }
+.schedule_event_time_dot_wrapper_last::after {
+  display: none;
+}
 .mobile .schedule_event_time_dot_wrapper::after {
   left: .5rem;
 }
@@ -41,6 +44,15 @@
   height: 1.25rem;
   background: rgb(46, 103, 184);
   border-radius: 100%;
+}
+.schedule_event_time_dot_keynotes {
+  background: purple;
+}
+.schedule_event_time_dot_speakers {
+  background: yellowgreen;
+}
+.schedule_event_time_dot_workshops {
+  background: orange;
 }
 .schedule_event_mobile_description {
   margin-left: 1rem;
@@ -54,9 +66,28 @@
   margin-bottom: .75rem;
   font-size: 1.25rem
 }
+.schedule_event_info_speaker {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+.schedule_event_info_speaker > div:first-of-type {
+  margin-right: 1rem !important;
+}
+.schedule_event_info_speaker h5 {
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+.schedule_event_info_speaker > div:last-of-type > div {
+  color: #666;
+}
 .schedule_event_info p {
   color: #666;
   margin-top: 0;
+}
+.schedule_event_info > div:last-of-type {
+  line-height: 1.5;
 }
 .schedule_event_image {
   position: relative;

@@ -27,44 +27,37 @@ export default function Navbar(props) {
       <Container>
         <nav className={styles.nav}>
           <Link href="/">
-            <img src="/logo.jpg" className={styles.logo} alt="EconHacks logo"></img>
+            <a className={styles.logo_link}>
+              <img src="/adl-logo.png" className={styles.logo} alt="EconHacks logo"></img>
+              <span className={styles.logo_text}>ADL</span>
+            </a>
           </Link>
           <div className={styles.nav_right}>
             <div className={styles.desktop_only}>
-              <Link href="/about">
-                <a className={`${styles.nav_link} ${router.pathname === '/about' ? styles.active : ''}`}>About</a>
+              <Link href="/#about">
+                <a className={`${styles.nav_link}`}>About</a>
               </Link>
               <Link href="/#schedule">
-                <a className={`${styles.nav_link} ${router.pathname === '/schedule' ? styles.active : ''}`}>Schedule</a>
+                <a className={`${styles.nav_link}`}>Schedule</a>
               </Link>
-              <a
-                href="https://www.notion.so/EconHacks-Prizes-f938065ddba84b1b80ebbaccdb30045b"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.nav_link}
-              >
-                Prizes
-              </a>
-              <Link href="/#faq">
-                <a className={`${styles.nav_link} ${router.pathname === '/#faq' ? styles.active : ''}`}>FAQ</a>
+              <Link href="/#speakers">
+                <a className={`${styles.nav_link}`}>Speakers</a>
               </Link>
               <Link href="/#sponsors">
-                <a className={`${styles.nav_link} ${router.pathname === '/#sponsors' ? styles.active : ''}`}>Sponsors</a>
+                <a className={`${styles.nav_link}`}>Sponsors</a>
               </Link>
-              <a
-                href="https://www.bonfire.com/econhacks-2021-swag/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.nav_link}
-              >
-                Store
-              </a>
+              <Link href="/#team">
+                <a className={`${styles.nav_link}`}>Team</a>
+              </Link>
+              <Link href="/#faq">
+                <a className={`${styles.nav_link}`}>FAQ</a>
+              </Link>
             </div>
             <a
-              href="https://econhacks.devfolio.co/"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScwzPvNG_H585YF2Rqe1GrUeS7ZK5Nvp7br7pbrGq-vRgKdug/viewform"
               target="_blank"
               rel="noopener noreferrer"
-              className={`${styles.nav_link_cta} ${router.pathname === '/register' ? styles.active : ''}`}
+              className={`${styles.nav_link_cta}`}
             >
               Register
             </a>

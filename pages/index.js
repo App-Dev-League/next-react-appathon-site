@@ -2,14 +2,13 @@ import Head from 'next/head'
 import Header from '../components/header'
 import Welcome from '../components/welcome'
 import Faq from '../components/faq'
-import Impact from '../components/impact'
 import Schedule from '../components/schedule'
 import SpeakersAndJudges from '../components/speakersAndJudges'
 import Sponsors from '../components/sponsors'
 import Footer from '../components/footer'
-import Themes from '../components/About/themes'
 import { initializeApollo } from '../lib/apolloClient'
 import { gql } from '@apollo/client'
+import Team from '../components/About/team'
 
 export function Home(props) {
   return (
@@ -25,12 +24,11 @@ export function Home(props) {
         date={props.misc.headerDate}
       />
       <Welcome />
-      <Impact />
       <Schedule scheduleDays={props.scheduleDays}/>
-      <Themes />
       <SpeakersAndJudges people={props.speakersAndJudgesItems} />
-      <Faq cardData={props.faqCards}/>
       <Sponsors sponsors={props.sponsors} />
+      <Team teamMembers={props.teamMembers} />
+      <Faq cardData={props.faqCards}/>
       <Footer />
     </div>
   )
@@ -52,24 +50,28 @@ export async function getStaticProps() {
         }
         speakerSeriesItems {
           title
+          role
           description
           photo {
             url
           }
-          logo {
-            url
-          }
-          logoAltText
           priorityOrderId
         }
         scheduleDays {
           scheduleEvents {
             title
             description
-            image {
-              url
+            time
+            type
+            speakerSeriesItem {
+              title
+              description
+              photo {
+                url
+              }
+              priorityOrderId
+              role
             }
-            dateTimeUtc
           }
           date
           dayNumber
@@ -85,6 +87,14 @@ export async function getStaticProps() {
           header
           content
         }
+        teamMembers {
+          name
+          photo {
+            url
+          }
+          role
+          teamCategory
+        }
       }
     `,
   })
@@ -95,7 +105,8 @@ export async function getStaticProps() {
       speakersAndJudgesItems: apolloClient.cache.extract().ROOT_QUERY.speakerSeriesItems,
       scheduleDays: apolloClient.cache.extract().ROOT_QUERY.scheduleDays,
       misc: apolloClient.cache.extract().ROOT_QUERY.miscs[0],
-      faqCards: apolloClient.cache.extract().ROOT_QUERY.faqCards
+      faqCards: apolloClient.cache.extract().ROOT_QUERY.faqCards,
+      teamMembers: apolloClient.cache.extract().ROOT_QUERY.teamMembers
     }
   }
 }

@@ -1,13 +1,25 @@
+.logo_link {
+  display: flex;
+  align-items: center;
+}
 .logo {
-  height: 6rem;
-  width: 6rem;
+  height: 4rem;
+  width: 4rem;
   border-radius: 15px;
   cursor: pointer;
   transition: 100ms ease-in-out;
+  position: relative;
+  top: .175rem;
 }
 .logo:hover {
   box-shadow: 0px 6.4px 14.4px rgba(0, 0, 0, 0.132), 0px 1.2px 3.6px rgba(0, 0, 0, 0.108);
   transform: scale(1.05);
+}
+.logo_text {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bold;
+  margin-left: .75rem;
 }
 .nav_wrapper {
   position: absolute;
@@ -22,7 +34,7 @@
   top: 0;
 }
 .nav_wrapper.hasBackground {
-  background: rgba(14, 36, 85, 0.788);
+  background: rgba(6, 12, 34, 0.8);
   backdrop-filter: blur(20px);
 }
 .nav {
@@ -102,17 +114,13 @@
   .nav_link {
     margin-right: 1.5rem;
   }
-  .logo {
-    height: 5rem;
-    width: 5rem;
-  }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .nav_mobile_menu_button {
     display: none;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .desktop_only {
     display: none;
   }

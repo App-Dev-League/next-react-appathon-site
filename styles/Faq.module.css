@@ -1,16 +1,18 @@
 .faq {
   padding: 3rem 1rem;
-  background: linear-gradient(281.58deg, #0C3F84 -4.33%, rgba(124, 124, 124, 0.46) 200.46%); /*linear-gradient(281.58deg, #032f6e -4.33%, rgba(6, 31, 66, 0.46) 140.46%);*/
 }
 .faq_header {
+  background: linear-gradient(281.58deg, #0C3F84 -4.33%, rgba(12, 63, 132, 0.46) 140.46%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 3rem;
   font-weight: 900;
   margin-top: 0;
-  color: #fff;
 }
 .faq_cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 2rem;
   justify-content: center;
   position: relative;
@@ -34,9 +36,6 @@
   transform: scale(1.02);
 }
 @media (max-width: 767.98px) {
-  .faq_cards {
-    grid-template-columns: repeat(1, 1fr);
-  }
   .faq_cards_card {
     height: 100%;
   }
@@ -51,15 +50,23 @@
     min-height: 15rem;
   }
 }
+.faq_cards_card div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq_cards_card button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
 .faq_cards_card h2 {
-  text-align: center;
   font-weight: 700;
   font-size: 1.5rem;
-  margin-top: 0;
-  margin-bottom: .75rem;
+  margin: 0;
 }
 .faq_cards_card p {
-  text-align: center;
   font-size: 1rem;
   line-height: 153.52%;
   margin: 0;
