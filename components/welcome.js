@@ -4,7 +4,7 @@ import CTAButton from './ctaButton'
 
 export default function Welcome(props) {
   return (
-    <section className={styles.welcome}>
+    <section className={styles.welcome} id="about">
       <Container>
         <div className={styles.welcome_header}>
           <h1>About The Event</h1>

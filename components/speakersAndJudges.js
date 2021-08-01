@@ -2,6 +2,7 @@ import styles from '../styles/SpeakersAndJudges.module.css'
 import styles2 from '../styles/SpeakerCard.module.css'
 import Container from './container'
 import SpeakerCard from './speakerCard'
+import Image from 'next/image'
 
 export default function SpeakersAndJudges(props) {
   const { people } = props
@@ -9,7 +10,7 @@ export default function SpeakersAndJudges(props) {
   const regularPeople = people.filter((person) => !person.priorityOrderId)
 
   return (
-    <section className={styles.speakers_judges}>
+    <section className={styles.speakers_judges} id="speakers">
       <Container>
         <h1 className={styles.speakers_judges_header}>Speakers</h1>
         <div className={styles.speakers_judges_cards}>
@@ -21,7 +22,8 @@ export default function SpeakersAndJudges(props) {
           })}
           <div className={styles2.speaker_card}>
             <div className={styles2.speaker_card_description}>
-              <h2>Workshops</h2>
+              <Image src="/online-workshops.png" width={446} height={223} />
+              <h2 style={{marginTop: "2rem"}}>Workshops</h2>
               <p>
                 Akshat Prakash <br/>
                 Jared Lera <br/>
