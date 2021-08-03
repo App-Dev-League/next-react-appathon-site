@@ -13,7 +13,7 @@ export default function Header(props) {
       className={styles.header_parallax}
     >
       <Background>
-        <Image src="/bkg.jpg" alt="" layout="fill"/>
+        <Image src="/bkg.jpg" alt="" layout="fill" priority={true}/>
       </Background>
       <div className={styles.header_color_bg}>
         <Container>
