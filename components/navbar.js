@@ -117,15 +117,6 @@ export default function Navbar(props) {
                 Sponsors
               </a>
             </Link>
-            <a
-              href="https://www.bonfire.com/econhacks-2021-swag/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.nav_link}
-              onClick={() => setIsMobileListOpen(!isMobileListOpen)}
-            >
-              Store
-            </a>
           </div>
         </div>
       </Container>
