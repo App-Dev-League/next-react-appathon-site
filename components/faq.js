@@ -11,7 +11,7 @@ export default function Faq(props) {
         {cardData && (
           <div className={styles.faq_cards}>
             {cardData.map((card, index) => {
-              return <FaqCard header={card.header} content={card.content} />
+              return <FaqCard header={card.header} content={card.content} key={index} />
             })}
           </div>
         )}
