@@ -76,7 +76,7 @@ export default function Navbar(props) {
         </nav>
         <div className={`${styles.nav_mobile_links_wrapper} ${isMobileListOpen ? styles.open : ''}`}>
           <div className={`${styles.nav_mobile_links} ${isMobileListOpen ? styles.open : ''}`}>
-            <Link href="/about">
+            <Link href="/#about">
               <a
                 className={`${styles.nav_link} ${router.pathname === '/about' ? styles.active : ''}`}
                 onClick={() => setIsMobileListOpen(!isMobileListOpen)}
@@ -92,29 +92,36 @@ export default function Navbar(props) {
                 Schedule
               </a>
             </Link>
-            <a
-              href="https://www.notion.so/EconHacks-Prizes-f938065ddba84b1b80ebbaccdb30045b"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.nav_link}
-              onClick={() => setIsMobileListOpen(!isMobileListOpen)}
-            >
-              Prizes
-            </a>
+            <Link href="/#speakers">
+              <a
+                className={`${styles.nav_link} ${router.pathname === '/schedule' ? styles.active : ''}`}
+                onClick={() => setIsMobileListOpen(!isMobileListOpen)}
+              >
+                Speakers
+              </a>
+            </Link>
+            <Link href="/#sponsors">
+              <a
+                className={`${styles.nav_link} ${router.pathname === '/schedule' ? styles.active : ''}`}
+                onClick={() => setIsMobileListOpen(!isMobileListOpen)}
+              >
+                Sponsors
+              </a>
+            </Link>
+            <Link href="/#team">
+              <a
+                className={`${styles.nav_link} ${router.pathname === '/schedule' ? styles.active : ''}`}
+                onClick={() => setIsMobileListOpen(!isMobileListOpen)}
+              >
+                Team
+              </a>
+            </Link>
             <Link href="/#faq">
               <a
                 className={`${styles.nav_link} ${router.pathname === '/#faq' ? styles.active : ''}`}
                 onClick={() => setIsMobileListOpen(!isMobileListOpen)}
               >
                 FAQ
-              </a>
-            </Link>
-            <Link href="/#sponsors">
-              <a
-                className={`${styles.nav_link} ${router.pathname === '/#sponsors' ? styles.active : ''}`}
-                onClick={() => setIsMobileListOpen(!isMobileListOpen)}
-              >
-                Sponsors
               </a>
             </Link>
           </div>
