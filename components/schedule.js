@@ -13,14 +13,16 @@ export default function Schedule(props) {
         <div className={styles.schedule_header}>
           <h1>Schedule</h1>
           <p>
+            <b>
             All times are in&nbsp;
-            <a
-              href="https://www.timeanddate.com/time/zones/pdt"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Pacific Time
-            </a>
+              <a
+                href="https://www.timeanddate.com/time/zones/pdt"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Pacific Time
+              </a>
+            </b>
           </p>
         </div>
         <div className={styles.schedule_wrapper}>
