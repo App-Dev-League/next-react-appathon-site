@@ -18,6 +18,41 @@ a {
   box-sizing: border-box;
 }
 
+.popup-overlay {
+  z-index: 20000 !important;
+}
+.popup-content {
+  border-radius: 1rem;
+  padding: 1.25rem !important;
+}
+@media (min-width: 1280px) {
+  .popup-content iframe {
+      width: 580px !important;
+      height: 350px !important;
+  }
+}
+@media (max-width: 992px) {
+  .popup-content {
+    width: 75% !important;
+  }
+}
+@media (max-width: 768px) {
+  .popup-content {
+    width: 95% !important;
+  }
+  .popup-content iframe {
+    width: 300px !important;
+    height: 200px !important;
+  }
+}
+.popup-content p {
+  margin-bottom: 2rem;
+}
+.popup-content iframe {
+  border-radius: .75rem;
+}
+
+
 /* #devfolio-apply-now {
   -ms-flex-align: center;
   -webkit-box-align: center;

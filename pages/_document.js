@@ -18,6 +18,7 @@ class MyDocument extends Document {
           <link rel="manifest" href="/site.webmanifest"/>
           <meta name="msapplication-TileColor" content="#0C3F84"/>
           <meta name="theme-color" content="#0C3F84"/>
+          <script src="https://kit.fontawesome.com/b358a3d11e.js" crossorigin="anonymous"></script>
         </Head>
         <body>
           <Main />
