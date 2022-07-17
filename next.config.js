@@ -25,7 +25,7 @@ module.exports = {
     return config
   },
   images: {
-    domains: ['media.graphcms.com']
+    domains: ['media.graphassets.com']
   },
   target: "serverless"
 }
