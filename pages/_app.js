@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>EconHacks</title>
+        <title>Appathon</title>
       </Head>
       <div>
         <Navbar/>

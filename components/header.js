@@ -25,7 +25,7 @@ export default function Header(props) {
               <p className={styles.header_date}>{date}</p>
               <div className={styles.header_buttons}>
                 <CTAButton href="https://docs.google.com/forms/d/e/1FAIpQLScwzPvNG_H585YF2Rqe1GrUeS7ZK5Nvp7br7pbrGq-vRgKdug/viewform" openInNewTab>Register</CTAButton>
-                <CTAButton href="https://docs.google.com/forms/d/1CJasj6uRgELEeuwinHwsCeOM56MWUZtu-DHaIxwjFOk/edit" openInNewTab smallFont outlined>Submit a Project</CTAButton>
+                <CTAButton href="https://docs.google.com/forms/d/1vP4Iy4nWjXp7CDDrinCa189qQLkiwSnZXmvw1vdZY18/edit" openInNewTab smallFont outlined>Submit a Project</CTAButton>
                 <CTAButton href="https://discord.gg/NYTKTHFEQV" openInNewTab smallFont outlined>Join Our Discord</CTAButton>
               </div>
             </div>
